@@ -26,9 +26,12 @@
 
 ### Тест-кейсов
 
-![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тк.png "Чек-лист")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тк.png "ТК")
 
-### Баг-репортов
+### Баг-репорта
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/бр.png "БР")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил1.png "БР")![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил2.png "БР")
 
 тест-план
 
