@@ -66,3 +66,22 @@
 *Итоговый чек-лист*   
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/чл%20состояний.png "тп")
+
+<br>
+
+### Таблица принятия решений
+
+*Тестируемая форма*   
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тпр.png "тпр")
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тпр2.png "тпр")
+
+<br>
+
+### Попарное тестирование
+Для тестирование фильтра в каталоге использовала инструмент для попарного тестирования https://pairwise.teremokgames.com   
+В результате были получены следующие комбинации входных данных для кейсов:
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/попарное.png "попарное")
+
