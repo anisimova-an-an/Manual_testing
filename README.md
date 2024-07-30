@@ -13,8 +13,8 @@
    2.2. [Таблица принятия решений](#таблица-принятия-решений)      
    2.3. [Попарное тестирование](#попарное-тестирование)      
    2.4. [Предугадывание ошибок](#предугадывание-ошибок)    
-3. [Тестирование REST API]()
-4. [UI тестирование]()
+3. [Тестирование REST API](#тестирование-rest-api)
+4. [UI тестирование](#ui-тестирование)
 
    
 ## Составление тестовых артефактов
@@ -143,6 +143,8 @@
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг_хедер.png "баг1")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Ошибки%20верстки%20в%20хедере.jpg "баг2")
+
+<br>
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг_гл_стр.png "баг1")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/гл%20стр%201.jpg "баг1")
