@@ -106,12 +106,13 @@
 
 - Декомпозиция и анализ продукта
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Backend-Backend.png "постман")
+
 - Выбор техник тест-дизайна и проектирование коллекции тестов в Postman   
 [Ссылка на коллекцию](https://github.com/anisimova-an-an/Manual_testing/blob/main/simulator.postman_collection%20(1).json)     
 [Ссылка на окружение](https://github.com/anisimova-an-an/Manual_testing/blob/main/Проект.postman_environment%20(1).json)     
 - Реализация тестов
 - Составление баг-репортов     
-Были найдены следующие баги:
+Были найдены следующие баги:     
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/списокбагов.png "баги")
 
 Примеры оформления баг-репортов:     
