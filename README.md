@@ -3,10 +3,10 @@
 В данном документе представлены примеры практических навыков ручного тестирования.
 
 ## Оглавление
-1. [Составление тестовых артефактов]()   
-   1.1. [Чек-лист]()     
-   1.2. [Тест-кейс]()   
-   1.3. [Баг-репорт]()   
+1. [Составление тестовых артефактов](#составление-тестовых-артефактов)   
+   1.1. [Чек-лист](#чек-листа-для-объекта-корзина)     
+   1.2. [Тест-кейс](#тест-кейсов)   
+   1.3. [Баг-репорт](#баг-репорта)   
    1.4. [Тест-план]()   
 3. [Техники тест-дизайна]()
    - [GET /post (Get List)](#get-post-get-list)
@@ -24,14 +24,20 @@
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/чек-лист.png "Чек-лист")
 
+<br>
+
 ### Тест-кейсов
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тк.png "ТК")
+
+<br>
 
 ### Баг-репорта
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/бр.png "БР")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил1.png "БР")![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил2.png "БР")
+
+<br>
 
 тест-план
 
