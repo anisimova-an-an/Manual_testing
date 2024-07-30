@@ -106,11 +106,16 @@
 
 - Декомпозиция и анализ продукта
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Backend-Backend.png "постман")
-- Выбор техник тест-дизайна и проектирование коллекции тестов в Постман (вложенный файл с коллекцией и окружением)
-[Ссылка на коллекцию](https://github.com/anisimova-an-an/Manual_testing/blob/main/simulator.postman_collection%20(1).json)
-[Ссылка на окружение](https://github.com/anisimova-an-an/Manual_testing/blob/main/Проект.postman_environment%20(1).json)
-
+- Выбор техник тест-дизайна и проектирование коллекции тестов в Postman   
+[Ссылка на коллекцию](https://github.com/anisimova-an-an/Manual_testing/blob/main/simulator.postman_collection%20(1).json)     
+[Ссылка на окружение](https://github.com/anisimova-an-an/Manual_testing/blob/main/Проект.postman_environment%20(1).json)     
 - Реализация тестов
-- Составление баг-репортов
-https://redmine.sedtest-school.ru/projects/pt5-anisimova-an-an/issues (начиная с задачи 12240 по 12269)
+- Составление баг-репортов     
+Были найдены следующие баги:
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/списокбагов.png "баги")
+
+Примеры оформления баг-репортов:     
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг1.png "баг1")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг2.png "баг2")
+
 
