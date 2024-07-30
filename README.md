@@ -81,6 +81,9 @@
 
 ### Попарное тестирование
 Для тестирование фильтра в каталоге использовала инструмент для попарного тестирования https://pairwise.teremokgames.com   
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/фильтр.png "попарное")
+
 В результате были получены следующие комбинации входных данных для кейсов:
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/попарное.png "попарное")
