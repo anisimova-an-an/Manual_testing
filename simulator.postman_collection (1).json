@@ -1,0 +1,4176 @@
+{
+	"info": {
+		"_postman_id": "000e2d84-5a37-43a1-a43e-729f7e071b83",
+		"name": "simulator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36331939"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "registerUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Анастасия\",\r\n    \"lastName\": \"Анисимова\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"123123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/user/register",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "335"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14f-D7FPrciOzTnyMYrurWa4mxZjno4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jul 2024 19:43:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idUser\": 2284,\n    \"firstName\": \"Анастасия\",\n    \"lastName\": \"Анисимова\",\n    \"email\": \"Stevie49@hotmail.com\",\n    \"mobile\": \"856-311-5325\",\n    \"password\": \"$2b$10$zJEqzYAO4lWBNOAGLvpNPObeN0OfA3wwUCSY2HZUsidjClXxdpn4S\",\n    \"role\": \"user\",\n    \"createdAt\": \"2024-07-19T19:43:49.000Z\",\n    \"updatedAt\": \"2024-07-19T19:43:49.000Z\",\n    \"refreshToken\": null,\n    \"isBlocked\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "registerUser (+ кирилица в фамилии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid\",\r\n    \"lastName\": \"вал\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- иероглиф в фамилии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid\",\r\n    \"lastName\": \"爱\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- цифры в фамилии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid\",\r\n    \"lastName\": \"911\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- спецсимволы в фамилии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid\",\r\n    \"lastName\": \"-+\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- пустое значение в фамилии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid\",\r\n    \"lastName\": \"\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- длинная фамилия)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid\",\r\n    \"lastName\": \"Длинное Длинное имяДлинное имяДлиннДлинное имяДлинное имяДлинное имяДлинное имяое имяДлинное имяДлинное имяДлинное имя\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (+ кирилица в имени)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Кирилл\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- иероглиф в имени)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"爱\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- цифры в имени)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"007\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- спецсимволы в имени)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"/*\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- пустое значение в имени)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- Длинное имя)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"MidАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасияАнастасия\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- пустое значение в пароле)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"ваппа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- иероглифы в пароле)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"ваппа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"爱\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- длинный пароль)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"рппааа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"длинныйдлинныйпарольдлинныйпарольдлинныйпарольдлинны455554545545455555555555555555555555555555555555554554544545454йпарольдлинныйпарольдлинныйпарольдлинныйпарольдлинныйпарольдииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииилинныйпароль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- дубликат почты)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"ррпа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"Abigayle.Cruickshank@gmail.com\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"длинныйдлинныйпароль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- пустое значение почты)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"ррпаоор\",\r\n    \"lastName\": \"Serdfvррр\",\r\n    \"email\": \"\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"длинныйдлинныйпароль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- невалидное значение почты)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"ррпа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"ghfhfhhgg\",\r\n    \"mobile\": \"{{$randomPhoneNumber}}\",\r\n    \"password\": \"длинныйдлинныйпароль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- длинный телефон)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"рппааа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"864-874-693899\",\r\n    \"password\": \"ииииииииииилинныйпароль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- дубликат телефона)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"рппааа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"864-874-6938\",\r\n    \"password\": \"длинныйдлинныйпарольдлинныйпарольдлинныйпарольдлинны455554545545455555555555555555555555555555555555554554544545454йпарольдлинныйпарольдлинныйпарольдлинныйпарольдлинныйпарольдииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииилинныйпароль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- пустое значение телефона)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"рппааа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"\",\r\n    \"password\": \"длинныйдлинныйпарольдлиноль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser (- буквы в значение телефона)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"рппааа\",\r\n    \"lastName\": \"Serdfv\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"mobile\": \"864-874-693п\",\r\n    \"password\": \"длинныйдлинныйпарольдлиноль\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Stevie49@hotmail.com\",\r\n    \"password\": \"123123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- неверный логин)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bdfddsssdfck@mail.ru\",\r\n    \"password\": \"1232ррррррр3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- пустой логин)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"\",\r\n    \"password\": \"123123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- неверный пароль)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Stevie49@hotmail.com\",\r\n    \"password\": \"12323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- пустой пароль)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Stevie49@hotmail.com\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- пустые логин и пароль)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- неверные логин и пароль)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bdfddsggggssdfck@mail.ru\",\r\n    \"password\": \"12ffdd323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- неверный логин и пустой пароль)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bdfddsgggggggssdfck@mail.ru\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser (- неверный пароль и пустой логин)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"\",\r\n    \"password\": \"1ff2323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/all-users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"all-users"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOneUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/2284",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"2284"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOneUser (- несуществующий id)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/6776664",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"6776664"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/2280",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"2280"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser (- несуществующий id)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/15655221",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"15655221"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid1099\",\r\n    \"lastName\": \"Seddrdfv99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/2279",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"2279"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser (- несуществующий id)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid10991\",\r\n    \"lastName\": \"Seddrdfv99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/2279568",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"2279568"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser (- невалидное значение в теле)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mid10991\",\r\n    \"lastName\": \"Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99Seddrdfv99\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/2279",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"2279"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Block User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/block-user/2270",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"block-user",
+								"2270"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Block User (- несуществующий id)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/block-user/2270565",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"block-user",
+								"2270565"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnBlock User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/unblock-user/2270",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"unblock-user",
+								"2270"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnBlock User (- несуществующий id)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/unblock-user/22706ппррррпп",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"unblock-user",
+								"22706ппррррпп"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HanleRefreshToken",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/refresh",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 5736,\r\n    \"quantity\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/addtocart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"addtocart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Cart (- несуществующий товар)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 777777,\r\n    \"quantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/addtocart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"addtocart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Cart (- большее количество)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 5754,\r\n    \"quantity\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/addtocart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"addtocart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Quantity",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 5754,\r\n    \"quantity\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Quantity (- количество=0)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 5754,\r\n    \"quantity\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Quantity (- несуществующий товар)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 5754666,\r\n    \"quantity\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product From Cart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 5754\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product From Cart (- товара нет в корзине)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 5754\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Add Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Product\",\r\n    \"price\": \"36338\",\r\n    \"category_id\": 24,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- пустое название)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"price\": \"36338\",\r\n    \"category_id\": 24,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- длинное название)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"длинноеоченьдлинноеоченьдлинноеоченьдлинноеоченьдлинноеоченьдлинноеоченьдлинноеоченьдлинноеоченьдлинноеоченьдлинноеоченьдлинноеочень\",\r\n    \"price\": \"36338\",\r\n    \"category_id\": 24,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- кирилица в названии)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"продукт\",\r\n    \"price\": \"3338\",\r\n    \"category_id\": 24,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- иероглифы в названии)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"爱пп\",\r\n    \"price\": \"3338\",\r\n    \"category_id\": 24,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- цифры в названии)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"12354\",\r\n    \"price\": \"3338\",\r\n    \"category_id\": 24,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- спецсимволы в названии)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"*+-*`!\",\r\n    \"price\": \"3338\",\r\n    \"category_id\": 24,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- несуществующая категория)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"ррррррорррр\",\r\n    \"price\": \"3338\",\r\n    \"category_id\": 200000,\r\n    \"quantity\": 25,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- большое количество единиц)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"ррррррорррр\",\r\n    \"price\": \"3338\",\r\n    \"category_id\": 28,\r\n    \"quantity\": 2500000000000000000000,\r\n    \"brand_id\": 29,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product (- несуществующий бренд)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"ррррррор67ррр\",\r\n    \"price\": \"3338\",\r\n    \"category_id\": 28,\r\n    \"quantity\": 2500,\r\n    \"brand_id\": 1,\r\n    \"images\": [\"1\", \"2\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/product/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Product (- несуществующий товар)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/product/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ параметры по умолчанию)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "k",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ page=1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- page=0)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?page=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- page=несуществующая страница)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?page=1000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1000"
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ limit=1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?limit=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- limit=0)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?limit=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "0"
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- limit=несуществующий)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?limit=100000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "100000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ category)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?category=28&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "28"
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- category=0)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?category=0&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "0"
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- category=36585k)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?category=36585k&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k"
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ brand=30)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?brand=30&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "30"
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- brand=30658u)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?brand=30658u&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "30658u"
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- brand=0)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?brand=0&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "0"
+								},
+								{
+									"key": "fields",
+									"value": "price,title,images",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ fields)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?fields=price,title,images&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "price,title,images"
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- fields несуществующее поле)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?fields=pri&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "pri"
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- fields= пустое значение)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?fields=&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ fields= *)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?fields=*&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "*"
+								},
+								{
+									"key": "sort",
+									"value": "price,brandId",
+									"disabled": true
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ sort=price)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?sort=price&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "price"
+								},
+								{
+									"key": "desc",
+									"value": "hlhj",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "*",
+									"disabled": true
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- sort= несуществующая колонка)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?sort=pric&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "pric"
+								},
+								{
+									"key": "desc",
+									"value": "desc",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "*",
+									"disabled": true
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (+ desc=1 )",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?sort=price&desc=1&fields=price&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "price"
+								},
+								{
+									"key": "desc",
+									"value": "1"
+								},
+								{
+									"key": "fields",
+									"value": "price"
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- desc= 0 )",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?sort=price&desc=0&fields=price&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "price"
+								},
+								{
+									"key": "desc",
+									"value": "0"
+								},
+								{
+									"key": "fields",
+									"value": "price"
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products (- desc= 2 )",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/?sort=price&desc=2&fields=price&limit=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "price"
+								},
+								{
+									"key": "desc",
+									"value": "2"
+								},
+								{
+									"key": "fields",
+									"value": "price"
+								},
+								{
+									"key": "brand",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "36585k",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Samsudsngdee122\",\r\n    \"images\": [\r\n        \"3.jpg\",\r\n        \"4.jpg\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/5784",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"5784"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product (- несуществующий продукт)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Samsudsngdee122\",\r\n    \"images\": [\r\n        \"3.jpg\",\r\n        \"4.jpg\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/5733",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"5733"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product (- несуществующий продукт)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/product/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Wishlist",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 5413\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/wishlist",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Wishlist (- несуществующий продукт)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/product/wishlist",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ima1ge",
+									"type": "file",
+									"src": "l3jjS7vpW/2024-06-11_11-04-42.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/product/5413/upload",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"5413",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Image (- невалидное изображение)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ima1ge",
+									"type": "file",
+									"src": "P-7PBXvrJ/Backend (1).xmind"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/product/5413/upload",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"product",
+								"5413",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"ggggg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category (- пустое название)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category (- длинное название)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"ДлинноеНазваниеДлинноеНазваниеДлинноеНазваниеДлинноеНазваниеДлинноеНазваниеДлинноеНазваниеДлинноеНазваниеДлинноеНазваниеДлинноеНазваниеДлинноеНазвание\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category (- кирилица в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"ДлинноеНазваниеДлин\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category (- иероглиф в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"爱\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category (- цифры в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"4565\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category (- спецсимволы в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"/*-+\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/category/105118",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"105118"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category (- несуществующая категория)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/category/200000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"200000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/category",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"Клавиатуры\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/105118",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"105118"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category (- несуществующая категория)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"Клавиатуры\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/category/200000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"200000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/category/105119",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"105119"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category (- несуществующая категория)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/category/200000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"category",
+								"200000"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Create Brand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Huawei\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brand (- пустое название)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brand (- длинное название)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназвание\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brand (- кирилица в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"русское\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brand (- иероглиф в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"爱\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brand (- цифры в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"7456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Brand (- спецсимволы в названии)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"/*-+\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/brand/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brand (- несуществующий бренд)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/brand/30",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/brand",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Brand",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Razer1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/30",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Brand (- несуществующий бренд)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Razer1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/brand/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Brand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/brand/27",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Brand (- несуществующий бренд)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/brand/2755554",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"brand",
+								"2755554"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg4MjIyNTgzLCJleHAiOjE2ODgzMDg5ODN9.DTu9nO502N0GaDGe8ETZJ6tumj3YiZGEmo1laoqyGcA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
