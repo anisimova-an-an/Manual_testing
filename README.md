@@ -106,17 +106,43 @@
 
 - Декомпозиция и анализ продукта
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Backend-Backend.png "постман")
-
 - Выбор техник тест-дизайна и проектирование коллекции тестов в Postman   
 [Ссылка на коллекцию](https://github.com/anisimova-an-an/Manual_testing/blob/main/simulator.postman_collection%20(1).json)     
 [Ссылка на окружение](https://github.com/anisimova-an-an/Manual_testing/blob/main/Проект.postman_environment%20(1).json)     
 - Реализация тестов
-- Составление баг-репортов     
-Были найдены следующие баги:     
+- Составление баг-репортов
+    
+*Были найдены следующие баги:*     
+
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/списокбагов.png "баги")
 
-Примеры оформления баг-репортов:     
+*Примеры оформления баг-репортов:*   
+
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг1.png "баг1")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг2.png "баг2")
+
+<br>
+
+## UI тестирование
+
+В результате тестирования UI web-приложения http://ecom-front.sedtest-tools.ru:4300/ мной была проделана следующая работа:
+
+- Определить объекты тестирования
+- Декомпозиция и анализ объектов
+- Проектирование тестовой документации
+  
+*Пример оформления чек-листа для тестирования пользовательского интерфейса страницы "Контанты":*   
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/верстка_чл.png "версткачл")
+- Тестирование
+- Оформление баг-репортов
+  
+*Примеры оформления баг-репортов при тестировании пользовательского интерфейса:*   
+
+<br>
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг_хедер.png "баг1")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Ошибки%20верстки%20в%20хедере.jpg "баг2")
+
 
 
