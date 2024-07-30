@@ -52,3 +52,11 @@
 <br>
 
 ## Техники тест-дизайна
+
+По результату тестирования web-приложения https://megamarket.ru предлагаю ознакомиться с примерами моего практического применения техник тест-дизайна:
+
+### Тестирование состояний и переходов объекта "Корзина"
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/диаграмма%20состояний.png "диаграмма")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/таблица%20состояний.png "таблица")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/чл%20состояний.png "тп")
