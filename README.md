@@ -144,5 +144,12 @@
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг_хедер.png "баг1")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Ошибки%20верстки%20в%20хедере.jpg "баг2")
 
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/баг_гл_стр.png "баг1")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/гл%20стр%201.jpg "баг1")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/гл%20стр%202.jpg "баг1")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/гл%20стр%203.jpg "баг1")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/гл%20стр%204.jpg "баг1")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/гл%20стр%205.jpg "баг1")
+
 
 
