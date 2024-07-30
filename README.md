@@ -7,7 +7,7 @@
    1.1. [Чек-лист](#чек-листа-для-объекта-корзина)     
    1.2. [Тест-кейс](#тест-кейсов)   
    1.3. [Баг-репорт](#баг-репорта)   
-   1.4. [Тест-план]()   
+   1.4. [Тест-план](#тест-плана-для-объекта-карточка-товара)   
 3. [Техники тест-дизайна]()
    - [GET /post (Get List)](#get-post-get-list)
    - [POST /post/create (Create Post)](#post-postcreate-create-post)
@@ -20,19 +20,19 @@
 
 По результату тестирования web-приложения https://megamarket.ru предлагаю ознакомиться с примерами моего составления следующих тестовых артефактов:
 
-### Чек-листа для объекта "Корзина"
+### Чек-лист для объекта "Корзина"
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/чек-лист.png "Чек-лист")
 
 <br>
 
-### Тест-кейсов
+### Тест-кейс
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тк.png "ТК")
 
 <br>
 
-### Баг-репорта
+### Баг-репорт
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/бр.png "БР")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил1.png "БР")
@@ -40,7 +40,7 @@
 
 <br>
 
-### Тест-плана для объекта "Карточка товара"
+### Тест-план для объекта "Карточка товара"
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тп1.png "тп")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Карточка%20товара-декомпозиция.jpeg "тп")
@@ -49,5 +49,6 @@
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тд2.png "тп")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тп3.png "тп")
 
+<br>
 
 ## Техники тест-дизайна
