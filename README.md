@@ -35,10 +35,19 @@
 ### Баг-репорта
 
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/бр.png "БР")
-![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил1.png "БР")![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил2.png "БР")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил1.png "БР")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/прил2.png "БР")
 
 <br>
 
-тест-план
+### Тест-плана для объекта "Карточка товара"
+
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тп1.png "тп")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Карточка%20товара-декомпозиция.jpeg "тп")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тп2.png "тп")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тд1.png "тп")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тд2.png "тп")
+![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тп3.png "тп")
+
 
 ## Техники тест-дизайна
