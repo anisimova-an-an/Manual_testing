@@ -43,6 +43,8 @@
 
 ### Тест-план для объекта "Карточка товара"
 
+<br>
+
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тп1.png "тп")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/Карточка%20товара-декомпозиция.jpeg "тп")
 ![Alt-текст](https://github.com/anisimova-an-an/Manual_testing/blob/main/тп2.png "тп")
